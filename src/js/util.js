@@ -8,7 +8,7 @@ module.exports={
 			ready: function (event) { 
 				/*$(this).jPlayer("setMedia", { 
 					m4a: initPlayer.music_url
-				});*/
+				});*/        
 			},
 			play: function(event) {
 				$(".start").removeClass("start").addClass("stop");
