@@ -88,6 +88,10 @@ var Apps=React.createClass({
 		return (
 			<div>
 				<div id="uio_jplayer" ></div>
+				<div className="page_con">
+					github项目地址: <br />
+					<a href="https://github.com/move132/React-music-object" target="_blank">https://github.com/move132/React-music-object</a>
+				</div>
 				<div className="uio-player-box">
 					{MusicPlayer}
 					{MusicListTab}
