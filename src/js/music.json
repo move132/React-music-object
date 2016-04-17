@@ -1,0 +1,73 @@
+[{ 
+	"mid":"09451200",
+	"title":"Miaow-07-Bubble",
+	"singer":"Bubble",
+	"time":"04:23",
+	"music_url":"../testmusic/Miaow-07-Bubble.mp3",
+	"album":"liaow-07-Bubble",
+	"thumb":"../image/lib/1419920779118.jpg"
+},{
+	"mid":"09451201",
+	"title":"半壶纱",
+	"singer":"刘珂矣",
+	"time":"04:23",
+	"music_url":"../testmusic/半壶纱.mp3",
+	"album":"",
+	"thumb":"../image/lib/1380442442.jpg"
+},{
+	"mid":"09451202",
+	"title":"护花使者",
+	"singer":"李克勤",
+	"time":"04:23",
+	"music_url":"../testmusic/护花使者.mp3",
+	"album":"宝丽金极品音色", 
+	"thumb":"../image/lib/1367141585.jpg"
+},{
+	"mid":"09451203",
+	"title":"连锁反应",
+	"singer":"林姗姗",
+	"time":"04:23",
+	"music_url":"../testmusic/连锁反应.mp3",
+	"album":"once upon a time…",
+	"thumb":"../image/lib/1392966266.jpg"
+},{
+	"mid":"09451204",
+	"title":"倩女幽魂",
+	"singer":"张国荣",
+	"time":"04:23",
+	"music_url":"../testmusic/倩女幽魂.mp3",
+	"album":"张国荣好精选",
+	"thumb":"../image/lib/1419920779118.jpg"
+},{
+	"mid":"09451205",
+	"title":"曲终人散",
+	"singer":"张宇",
+	"time":"04:23",
+	"music_url":"../testmusic/曲终人散.mp3",
+	"album":"曲终人散",
+	"thumb":"../image/lib/1419920869261.jpg"
+},{
+	"mid":"09451206",
+	"title":"忘尘谷",
+	"singer":"刘珂矣",
+	"time":"04:23",
+	"music_url":"../testmusic/忘尘谷.mp3",
+	"album":"",
+	"thumb":"../image/lib/1419921179220.jpg"
+},{
+	"mid":"09451207",
+	"title":"忘记他",
+	"singer":"邓丽君",
+	"time":"04:23",
+	"music_url":"../testmusic/忘记他.mp3",
+	"album":"邓丽君 4 In 1 珍藏集",
+	"thumb":"../image/lib/1419921332411.jpg"
+},{
+	"mid":"09451208",
+	"title":"雨中的恋人们（Live版）",
+	"singer":"黄凯芹",
+	"time":"04:23",
+	"music_url":"../testmusic/雨中的恋人们（Live版）.mp3",
+	"album":"Unforgettable 演唱会",
+	"thumb":"../image/lib/7748726372.jpg"
+}]

@@ -1,0 +1,4 @@
+node_modules/
+build/
+src/image/static/bg/
+src/testmusic/
