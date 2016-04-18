@@ -6,7 +6,7 @@
 	header('Access-Control-Allow-Methods','POST,GET,OPTIONS'); // 响应类型
 	header('Access-Control-Allow-Headers:x-requested-with,content-type'); // 响应头设置
 
-
+    //api
  	$appid = "10002597";
 	$bucket = "movejs";
 	$secret_id = "AKIDz8XZ8tWDZcN950IuVe9DUNE7leTxCvVO";
