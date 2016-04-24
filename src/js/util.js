@@ -106,11 +106,17 @@ module.exports={
 	},
 	next: function(_reactThis) { 
 		var musiclist=this.getPlaylist();
+		if (musiclist.length <= 0) {
+			return ;
+		};
 		window.current=window.current < musiclist.length-1 ?  window.current+1 : 0 ; 
 		this.play(_reactThis,musiclist,window.current);  
 	},
 	previous: function(_reactThis) {
 		var musiclist=this.getPlaylist();
+		if (musiclist.length <= 0) {
+			return ;
+		};
 		window.current=(window.current == 0 ) ? musiclist.length-1 : window.current-1;
 		this.play(_reactThis,musiclist,window.current);  
 	},
