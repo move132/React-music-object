@@ -50,11 +50,11 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({ //开启压缩
+    /*new webpack.optimize.UglifyJsPlugin({ //开启压缩
         compress: {
             warnings: false
         } 
-    }), 
+    }), */
     new ExtractTextPlugin('css/[name].css'),
     new webpack.ProvidePlugin({  
         React: 'react',

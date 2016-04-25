@@ -82,6 +82,7 @@ var MusicList=React.createClass({
 					//console.log("数据数量：",musicList.length);
 					if (musicList.length > 0) {
 						var current_index=current_index==musicList.length ? 0 :current_index;
+						window.current=current_index;  // 重新设置播放序号
 						Util.play(_this,musicList,current_index); 
 						//更新歌曲播放的信息 
 					}; 
