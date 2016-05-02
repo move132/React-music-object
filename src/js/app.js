@@ -23,7 +23,7 @@ var Apps=React.createClass({
 			"background":"url("+url+") no-repeat",
 			"background-size":"cover",
 			"background-attachment":"fixed"
-		}).fadeIn(300); 
+		});
 		 
 	},
 	musiclist:function(res){
@@ -54,7 +54,7 @@ var Apps=React.createClass({
 				if (res.code == 200) { 
 					interBg=setInterval(function(){
 						_this.setBgImg(res.data.imglist);
-					},6000);
+					},10000);
 					_this.musiclist(res.data.musiclist);
 				}; 
 			}
