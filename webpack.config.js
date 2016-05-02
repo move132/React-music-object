@@ -42,7 +42,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loader: 'jsx-loader?harmony' }, 
-      { test: /\.scss$/, loader:  ExtractTextPlugin.extract("style", "!css!sass")},  
+      { test: /\.scss$/, loader:  ExtractTextPlugin.extract("style", "!css!sass?outputStyle=expanded")},  
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style", "css") },
       { test: /\.json$/, loader: 'file?name=js/[name].[ext]' }, 
       { test: /\.woff|\.woff2|\.svg|.eot|.otf|\.ttf/, loader : 'url?name=build/fonts/[name].[ext]&prefix=font/&limit=10000'},

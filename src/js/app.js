@@ -8,6 +8,7 @@ var MusicPlayer=require("music_player");
  
  
 window.current=0;
+var interBg;
 var Apps=React.createClass({
 	getInitialState:function(){
 		return {
@@ -18,11 +19,13 @@ var Apps=React.createClass({
 		var random= Math.floor(Math.random()*res.length);;  
 		var url=res[random];
 		//console.log(random,url);
-		$("body").css({
-			"background":"url("+url+") no-repeat",
-			"background-size":"cover",
-			"background-attachment":"fixed"
-		}); 
+		interBg=setInterval(function(){
+			$("body").css({
+				"background":"url("+url+") no-repeat",
+				"background-size":"cover",
+				"background-attachment":"fixed"
+			}); 
+		},4000); 
 	},
 	musiclist:function(res){
 		if (localStorage.getItem("music_playlist")&&(JSON.parse(localStorage.getItem("music_playlist"))).length>0 ) {
