@@ -18,14 +18,13 @@ var Apps=React.createClass({
 	setBgImg:function(res){
 		var random= Math.floor(Math.random()*res.length);;  
 		var url=res[random];
-		//console.log(random,url);
-		interBg=setInterval(function(){
-			$("body").css({
-				"background":"url("+url+") no-repeat",
-				"background-size":"cover",
-				"background-attachment":"fixed"
-			}); 
-		},4000); 
+		  
+		$("body").css({
+			"background":"url("+url+") no-repeat",
+			"background-size":"cover",
+			"background-attachment":"fixed"
+		}).fadeIn(300); 
+		 
 	},
 	musiclist:function(res){
 		if (localStorage.getItem("music_playlist")&&(JSON.parse(localStorage.getItem("music_playlist"))).length>0 ) {
@@ -52,8 +51,10 @@ var Apps=React.createClass({
 			type:'get',
 			dataType:'json',
 			success:function(res){ 
-				if (res.code == 200) {
-					_this.setBgImg(res.data.imglist);
+				if (res.code == 200) { 
+					interBg=setInterval(function(){
+						_this.setBgImg(res.data.imglist);
+					},6000);
 					_this.musiclist(res.data.musiclist);
 				}; 
 			}
