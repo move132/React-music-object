@@ -40,6 +40,11 @@ module.exports = {
     publicPath: '/build/' 
   },
   module: {
+   /* preLoaders: [{  //JS 校验
+      test: /\.(js|jsx)$/,
+      exclude: /node_modules/,
+      loader: 'eslint-loader'
+    }],*/
     loaders: [
       { test: /\.js$/, loader: 'jsx-loader?harmony' }, 
       { test: /\.scss$/, loader:  ExtractTextPlugin.extract("style", "!css!sass?outputStyle=expanded")},  
