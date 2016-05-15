@@ -47,14 +47,13 @@ var Apps=React.createClass({
  
 		
 		$.ajax({
-			url:"http://music.movecss.com/src/api.php",
+			//url:"http://music.movecss.com/src/api.php",
+			url:"../../src/api.php",
 			type:'get',
 			dataType:'json',
 			success:function(res){ 
-				if (res.code == 200) { 
-					interBg=setInterval(function(){
-						_this.setBgImg(res.data.imglist);
-					},10000);
+				if (res.code == 200) {  
+					_this.setBgImg(res.data.imglist); 
 					_this.musiclist(res.data.musiclist);
 				}; 
 			}

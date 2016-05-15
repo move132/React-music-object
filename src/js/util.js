@@ -10,8 +10,11 @@ module.exports={
 					m4a: initPlayer.music_url
 				});*/        
 			},
-			play: function(event) {
+			play: function(event) { 
 				$(".start").removeClass("start").addClass("stop");
+			},
+			timeupdate:function(ev){
+				//console.log(ev.jPlayer.status.currentTime);
 			},
 			pause: function(event) {
 				$(".stop").removeClass("stop").addClass("start");
@@ -63,7 +66,7 @@ module.exports={
 				seekBar: ".uio-player_bar",//进度条ELE
 				playBar: ".play_current_bar",//已经进行到X百分比进度条
 				duration: ".uio-time", //时间模式切换
-				//currentTime:"jp-current-time",
+				//currentTime:".jp-current-time",
 				mute: ".volume", //音量
 				volumeBar: ".uio-jp-volume-bar",
 				volumeBarValue: ".uio-volume-bar-value", //控制音量大小
@@ -92,8 +95,7 @@ module.exports={
 		var uio_jplayer=$("#uio_jplayer"); 
 		uio_jplayer.jPlayer("setMedia",{
 			m4a: musicList[index].music_url
-		});
-		uio_jplayer.jPlayer("play");
+		}).jPlayer("play");
 		_reactThis.setState({
 	    	mid: musicList[index].mid,
 			title: musicList[index].title,

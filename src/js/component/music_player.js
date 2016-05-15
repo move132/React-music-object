@@ -95,13 +95,14 @@ var MusicPlayer=React.createClass({
 					 	<span>{this.state.title}--{this.state.singer}</span>
 					</div>
 					<div className="uio-progress-bar">
-						<p className="uio-player_bar">
+						<p className="uio-player_bar"> 
 							<span className="player_bg_bar" id="spanplayer_bgbar"></span>
 							<span className="download_bar" id="downloadbar" ></span>
 							<span className="play_current_bar" id="spanplaybar"></span>
 							<span className="progress_op"  id="spanprogress_op"></span> 
-							<span className="uio-time">00:00</span>
+							<span className="uio-time">00:00</span> 
 						</p>
+						{/*<span className="jp-current-time"></span>*/}
 					</div>
 					<div className="uio-player-controls">
 						<div className="uio-playerl">

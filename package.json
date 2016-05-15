@@ -4,6 +4,7 @@
   "description": "React-music-object",
   "main": "index.js",
   "scripts": {
+    "start": "set NODE_ENV=dev&webpack-dev-server --progress --colors --hot --inline --port 5000",
     "dev": "set NODE_ENV=dev&webpack  --progress --profile --colors",
     "release": "set NODE_ENV=release&webpack  --progress --profile --colors"
   },
@@ -33,6 +34,7 @@
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.14"
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
   }
 }

@@ -116,6 +116,55 @@
 				"thumb" => "../image/lib/7748726372.jpg"
 			)
 	);
+
+
+	function getData($url) {
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_HEADER, false);
+		curl_setopt($ch, CURLOPT_HEADER, 0);
+		//curl_setopt($ch, CURLOPT_REFERER, "http://www.xxx.com/user/index.do?cid=71347675");  
+		curl_setopt($ch, CURLOPT_ENCODING, "");
+		curl_setopt($ch, CURLOPT_BINARYTRANSFER, true) ; 
+		/*curl_setopt($ch, CURLOPT_HTTPHEADER, array(  
+				"Cookie:  OTOKEN=835568e3-c362-4557-8171-c75cc2a83e54;", 
+				"User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"
+	        ));*/
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER,1); //设置是否直接输出到页面 0  是  1 否   
+		 
+		$html= curl_exec($ch );
+		curl_close($ch); 
+		$json = json_decode($html, true); 
+		return $json;
+	}
+
+
+
+
+
+	/*$song_list=getData("http://tingapi.ting.baidu.com/v1/restserver/ting?from=webapp_music&method=baidu.ting.billboard.billList&type=1&size=30&%20offset=0");
+	$data=$song_list["song_list"]; 
+	$list=array();
+
+  	foreach ($data as $key => $val) {
+  		
+  		$list[$key]["mid"]=$data[$key]["song_id"];
+  		$list[$key]["thumb"]=$data[$key]["pic_big"];
+  		$list[$key]["pic_small"]=$data[$key]["pic_small"];
+  		$list[$key]["lrclink"]=$data[$key]["lrclink"]; 
+  		$song_info=getData("http://tingapi.ting.baidu.com/v1/restserver/ting?from=webapp_music&method=baidu.ting.song.playAAC&songid=".$data[$key]["song_id"]);
+
+  		//echo $song_info["bitrate"]["file_link"];
+  
+
+  		$list[$key]["music_url"]="../RemoteFile.php?url=".$song_info["bitrate"]["file_link"];
+
+  		$list[$key]["title"]=$data[$key]["title"];
+  		$list[$key]["singer"]=$data[$key]["author"];
+  		$list[$key]["album"]=$data[$key]["album_title"];  
+  	}*/
+
+
 	
 	$bgimg=array(
 		$domain."armenia_mery_my_home-wallpaper-1920x1080.jpg".$sign,  
