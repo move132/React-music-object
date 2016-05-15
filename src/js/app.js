@@ -46,8 +46,7 @@ var Apps=React.createClass({
 		var _this=this;
  
 		
-		$.ajax({
-			//url:"http://music.movecss.com/src/api.php",
+		$.ajax({ 
 			url:"../../src/api.php",
 			type:'get',
 			dataType:'json',

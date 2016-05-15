@@ -19,6 +19,7 @@ var TabComponent=React.createClass({
 	        data:this.props.data  
 	    };
 	},
+	componentDidMount:function() {},
 	nav_Click:function(index){
 		//console.log(this.props.data);
 	},

@@ -98,15 +98,12 @@ html,body,button,input,select,textarea {
 .tar{text-align: right;}
 
 body{
-	/* background:#000 url(../../image/static/bing-3.jpg) no-repeat;  */
- 	/* background:#000; */
 	background-size:cover;
    background-attachment:fixed;
 }
 
 .uio-player-box{
-	position:fixed;
-	/* top: 50%; left:50%;margin-left: -300px; margin-top: -60px; */
+	position:fixed; 
 	left:-520px;
 	bottom:0;
 	width:520px;
