@@ -71,10 +71,10 @@ module.exports = {
         template:'./src/template/music.html', // 模板路径
         inject:false,  //允许插件修改包括head与body
         hash:true,  
-        minify:{  //压缩HTML文件
+        /*minify:{  //压缩HTML文件
           removeComments:true,  //移除 注释
           collapseWhitespace:true //删除空白符与换行符
-        }
+        }*/
     })
   ],
   resolve: {
